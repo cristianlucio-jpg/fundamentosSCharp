@@ -40,9 +40,9 @@ fundamentosSCharp/
 │   ├── operacionMultiplicacion.cs
 │   └── programa.cs
 ├── .gitignore
-├── README.md
 ├── LICENSE
-└── fundamentosSCharp.csproj
+├── README.md
+└── ejercicioCalculadoraAritmeticaSCharp.csproj
 
 ## Ejemplo de ejecución
 Suma: 5 + 3 = 8
