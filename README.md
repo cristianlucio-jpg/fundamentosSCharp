@@ -40,8 +40,8 @@ fundamentosSCharp/
 │   ├── operacionMultiplicacion.cs
 │   └── programa.cs
 ├── .gitignore
-├── README.md
 ├── LICENSE
+├── README.md
 └── fundamentosSCharp.csproj
 
 ## Ejemplo de ejecución
