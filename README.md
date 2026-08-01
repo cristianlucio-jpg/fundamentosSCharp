@@ -16,29 +16,30 @@ Los ejercicios están diseñados para reforzar la comprensión de clases abstrac
 - **Encapsulación:** Propiedades y clases organizadas para proteger datos.
   
 ## 🔄 Sobrecarga
-- Métodos `CalcularOperacion` sobrecargados para distintos tipos (`int`, `double`).
+- Métodos `calcularOperacion` sobrecargados para distintos tipos (`int`, `double`).
   
 ## Principios SOLID
-- **SRP (Responsabilidad Única):** Cada clase tiene una única responsabilidad (`OperacionSuma` suma, `OperacionMultiplicacion` multiplica, `Calculadora` ejecuta operaciones).  
+- **SRP (Responsabilidad Única):** Cada clase tiene una única responsabilidad (`operacionSuma` suma, `operacionMultiplicacion` multiplica, `calculadora` ejecuta operaciones).  
 - **OCP (Abierto/Cerrado):** El sistema está abierto a extensión (pueden añadirse nuevas operaciones) y cerrado a modificación.  
 - **LSP (Sustitución de Liskov):** Las clases que implementan `IOperacion` pueden sustituir a la interfaz sin alterar el comportamiento.  
 - **ISP (Segregación de Interfaces):** Se usa la interfaz `IOperacion` para evitar dependencias innecesarias.  
-- **DIP (Inversión de Dependencias):** `Calculadora` depende de la abstracción `IOperacion`, no de las clases concretas.  
+- **DIP (Inversión de Dependencias):** `calculadora` depende de la abstracción `IOperacion`, no de las clases concretas.  
 
 ## Contenido del proyecto
 | Ejercicio              | Clase/Archivo | Descripción |
 |------------------------|---------------|-------------|
-| CalculadoraAritmetica  | calculadora.cs, operacion.cs, operacionMultiplicacion.cs, operacionSuma.cs, programa.cs | Operaciones matemáticas básicas con polimorfismo. |
+| calculadoraAritmetica  | calculadora.cs, operacion.cs, operacionMultiplicacion.cs, operacionSuma.cs, programa.cs | Operaciones matemáticas básicas con polimorfismo. |
 
 ## Estructura del proyecto
 ```text
 fundamentosSCharp/
 ├── src/
-│   ├── calculadora.cs
-│   ├── operacion.cs
-│   ├── operacionSuma.cs
-│   ├── operacionMultiplicacion.cs
-│   └── programa.cs
+│   └── ejercicio01CalculadoraAritmetica/
+│       ├── calculadora.cs
+│       ├── operacion.cs
+│       ├── operacionSuma.cs
+│       ├── operacionMultiplicacion.cs
+│       └── programa.cs
 ├── .gitignore
 ├── LICENSE
 ├── README.md
