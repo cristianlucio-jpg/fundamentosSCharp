@@ -10,20 +10,20 @@ Los ejercicios están diseñados para reforzar la comprensión de clases abstrac
 - Documentar con Javadoc/XML y mantener código modular y claro.
 
 ## Pilares aplicados
-- **Abstracción:** Clase abstracta `operacion`.  
-- **Herencia:** `OperacionSuma` y `OperacionMultiplicacion` heredan de `operacion`.  
-- **Polimorfismo:** Sobrescritura del método `calcular`.  
-- **Encapsulación:** Propiedades y clases organizadas.  
-
-## Sobrecarga
-- Métodos `calcular` sobrecargados para distintos tipos (`int`, `double`).  
-
-- **SOLID:**
-- **SRP (Responsabilidad Única):** Cada clase tiene una única responsabilidad       (`OperacionSuma` suma, `OperacionMultiplicacion` multiplica, `Calculadora` ejecuta operaciones).
-- **OCP (Abierto/Cerrado):** El sistema está abierto a extensión (pueden añadirse nuevas operaciones) y cerrado a modificación.
-- **LSP (Sustitución de Liskov):** Las subclases de `Operacion` pueden sustituir a la clase base sin alterar el comportamiento.
-- **ISP (Segregación de Interfaces):** Se usan abstracciones (clase abstracta `Operacion`) para evitar dependencias innecesarias.
-- **DIP (Inversión de Dependencias):** `Calculadora` depende de la abstracción `Operacion`, no de las clases concretas.
+- **Abstracción:** Interfaz `IOperacion` define el contrato de las operaciones.  
+- **Herencia:** `operacionSuma` y `operacionMultiplicacion` implementan la interfaz `IOperacion`.  
+- **Polimorfismo:** Sobrescritura del método `calcularOperacion` en cada operación.  
+- **Encapsulación:** Propiedades y clases organizadas para proteger datos.
+  
+## 🔄 Sobrecarga
+- Métodos `CalcularOperacion` sobrecargados para distintos tipos (`int`, `double`).
+  
+## Principios SOLID
+- **SRP (Responsabilidad Única):** Cada clase tiene una única responsabilidad (`OperacionSuma` suma, `OperacionMultiplicacion` multiplica, `Calculadora` ejecuta operaciones).  
+- **OCP (Abierto/Cerrado):** El sistema está abierto a extensión (pueden añadirse nuevas operaciones) y cerrado a modificación.  
+- **LSP (Sustitución de Liskov):** Las clases que implementan `IOperacion` pueden sustituir a la interfaz sin alterar el comportamiento.  
+- **ISP (Segregación de Interfaces):** Se usa la interfaz `IOperacion` para evitar dependencias innecesarias.  
+- **DIP (Inversión de Dependencias):** `Calculadora` depende de la abstracción `IOperacion`, no de las clases concretas.  
 
 ## Contenido del proyecto
 | Ejercicio              | Clase/Archivo | Descripción |
