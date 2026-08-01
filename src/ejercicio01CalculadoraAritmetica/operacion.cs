@@ -6,7 +6,7 @@ namespace MyApp;
 /// </summary>
 /// <author>Cristian Alexis Lucio Narváez</author>
 
-abstract class operacion
+abstract class IOperacion
 {
     // Operandos protegidos para ser usados por las subclases
     protected double operandoUno;

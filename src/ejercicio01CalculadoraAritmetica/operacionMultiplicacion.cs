@@ -5,7 +5,7 @@ namespace MyApp;
 /// </summary>
 /// <author>Cristian Alexis Lucio Narváez</author>
 
-class operacionMultiplicacion : operacion
+class operacionMultiplicacion : IOperacion
 {
     /// <summary>
     /// Calcula la multiplicación de los dos operandos.

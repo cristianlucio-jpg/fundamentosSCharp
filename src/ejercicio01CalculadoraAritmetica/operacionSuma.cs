@@ -5,7 +5,7 @@ namespace MyApp;
 /// </summary>
 /// <author>Cristian Alexis Lucio Narváez</author>
 
-class operacionSuma : operacion
+class operacionSuma : IOperacion
 {
     /// <summary>
     /// Calcula la suma de los dos operandos.
