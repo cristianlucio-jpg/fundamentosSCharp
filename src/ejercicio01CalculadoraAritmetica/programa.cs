@@ -1,7 +1,7 @@
 namespace MyApp;
 
 /// <summary>
-/// Clase principal del programa (programa).
+/// Clase principal del programa.
 /// Inicializa la calculadora y ejecuta las operaciones solicitadas por el usuario.
 /// </summary>
 /// <author>Cristian Alexis Lucio Narváez</author>
@@ -9,8 +9,7 @@ namespace MyApp;
 /// Este programa se ejecuta desde el método Main.
 /// Permite ingresar datos por consola y mostrar resultados.
 /// </remarks>
-
-internal class programa
+internal class Programa
 {
     /// <summary>
     /// Método principal del programa.
@@ -20,20 +19,17 @@ internal class programa
     static void Main(string[] args)
     {
         // Instancia de la calculadora
-        calculadora calculadora = new calculadora();
+        Calculadora calculadora = new Calculadora();
 
         // Crear operación de suma
-        operacion suma = new operacionSuma();
-        // operador(operandoUno, operandoDos)
-        suma.setOperador(5, 3);
-        Console.WriteLine("Suma: " + calculadora.ejecutarOperacion(suma));
+        IOperacion suma = new OperacionSuma();
+        suma.SetOperador(5, 3);
+        Console.WriteLine("Suma: " + calculadora.EjecutarOperacion(suma));
 
         // Crear operación de multiplicación
-        operacion multiplicacion = new operacionMultiplicacion();
-        // operador(operandoUno, operandoDos)
-        multiplicacion.setOperador(5, 3);
-        Console.WriteLine("Multiplicacion: " + calculadora.ejecutarOperacion(multiplicacion));
+        IOperacion multiplicacion = new OperacionMultiplicacion();
+        multiplicacion.SetOperador(5, 3);
+        Console.WriteLine("Multiplicación: " + calculadora.EjecutarOperacion(multiplicacion));
     }
 }
-
 
